@@ -1,0 +1,14 @@
+<html>
+ <head>
+   <script type="text/javascript">
+    function   runcommand() {   
+       s=new   ActiveXObject("WScript.Shell");   
+       cmd="cmd.exe /k cd..& cd.. & c:";   
+       s.Run(cmd);             
+    }  
+   </script>
+ </head>
+ <body>
+ <input type="button" onclick="runcommand();" value="call cmd"></input>
+ </body>
+</html>
